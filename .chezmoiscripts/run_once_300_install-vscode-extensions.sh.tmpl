@@ -1,0 +1,29 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+
+# Install VSCode extensions from vscode-extensions.txt
+if command -v code >/dev/null 2>&1; then
+    echo "Installing VSCode extensions..."
+    
+    # Check if vscode-extensions.txt exists
+    if [ -f "{{ .chezmoi.homeDir }}/vscode-extensions.txt" ]; then
+        # Read extensions from file and install them
+        while IFS= read -r extension || [ -n "$extension" ]; do
+            # Skip empty lines and comments
+            case "$extension" in
+                ''|'#'*) continue ;;
+                *) 
+                    echo "Installing extension: $extension"
+                    code --install-extension "$extension" --force
+                    ;;
+            esac
+        done < "{{ .chezmoi.homeDir }}/vscode-extensions.txt"
+        
+        echo "VSCode extensions installation completed."
+    else
+        echo "vscode-extensions.txt not found, skipping extension installation."
+    fi
+else
+    echo "VSCode not found, skipping extension installation."
+fi
+{{ end -}}
