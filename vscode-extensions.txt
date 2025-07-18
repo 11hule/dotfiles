@@ -1,0 +1,23 @@
+# VSCode Extensions
+# Add your extensions here, one per line
+# Example: ms-python.python
+
+# Theme and Icons
+zhuangtongfa.material-theme
+PKief.material-icon-theme
+
+# Formatters
+biomejs.biome
+esbenp.prettier-vscode
+ms-python.black-formatter
+
+# Language Support
+ms-python.python
+ms-vscode.vscode-typescript-next
+
+# Git
+eamodio.gitlens
+
+# Utilities
+ms-vscode.vscode-json
+redhat.vscode-yaml
