@@ -1,0 +1,68 @@
+# Show hidden files
+--hidden
+
+# Common build and cache directories to ignore
+--glob=!.git
+--glob=!.svn
+--glob=!.hg
+--glob=!node_modules
+--glob=!.npm
+--glob=!.yarn
+--glob=!.cache
+--glob=!dist
+--glob=!build
+--glob=!target
+--glob=!__pycache__
+--glob=!.pytest_cache
+--glob=!.coverage
+--glob=!.nyc_output
+--glob=!.DS_Store
+--glob=!.Trash
+
+# Binary and compiled files
+--glob=!*.bin
+--glob=!*.exe
+--glob=!*.dll
+--glob=!*.so
+--glob=!*.dylib
+--glob=!*.pyc
+--glob=!*.pyo
+--glob=!*.class
+--glob=!*.jar
+--glob=!*.war
+--glob=!*.o
+--glob=!*.a
+
+# Media files
+--glob=!*.png
+--glob=!*.jpg
+--glob=!*.jpeg
+--glob=!*.gif
+--glob=!*.bmp
+--glob=!*.ico
+--glob=!*.svg
+--glob=!*.pdf
+--glob=!*.mp3
+--glob=!*.mp4
+--glob=!*.avi
+--glob=!*.mov
+--glob=!*.wmv
+
+# Log files
+--glob=!*.log
+--glob=!logs
+--glob=!*.tmp
+--glob=!*.temp
+
+# IDE and editor files
+--glob=!.vscode
+--glob=!.idea
+--glob=!*.swp
+--glob=!*.swo
+--glob=!*~
+
+# Package manager files
+--glob=!package-lock.json
+--glob=!yarn.lock
+--glob=!Pipfile.lock
+--glob=!poetry.lock
