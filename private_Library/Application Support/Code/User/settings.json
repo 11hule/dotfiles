@@ -1,0 +1,109 @@
+{
+  // 字体设置
+  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontLigatures": true,
+
+  // 主题和图标
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro Darker",
+
+  // 格式化设置
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+
+  // 编辑器设置
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.accessibilitySupport": "on",
+
+  // 终端设置
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh"
+    }
+  },
+
+  // Git 设置
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.pullBeforeCheckout": true,
+
+  // 搜索设置
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true
+  },
+  "search.collapseResults": "always",
+
+  // 面包屑导航
+  "breadcrumbs.filePath": "on",
+  "breadcrumbs.symbolPath": "off",
+
+  // 文件设置
+  "files.eol": "\n",
+
+  // 代理设置
+  "http.proxy": "http://127.0.0.1:7890",
+  "http.proxySupport": "on",
+  "http.proxyStrictSSL": false,
+
+  // AI 工具设置
+  "Codegeex.License": "",
+  "Codegeex.Privacy": true,
+  "database-client.autoSync": true,
+
+  // MCP 设置
+  "mcpFigma.aiAssistant": "manual",
+  "mcpFigma.autoStartWebSocket": true,
+  "mcpFigma.websocketPort": 7890,
+  "trae.chatLanguage": "cn"
+}
